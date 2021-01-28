@@ -1,8 +1,8 @@
-baseURL = "http://examplesite.com"
-languageCode = "en-us"
+baseURL = "https://javinator9889.com"
+languageCode = "es-es"
 summaryLength = "10"
 theme = "kross-hugo"
-title = "Kross"
+title = "Javier Alonso | Javinator9889"
 [[menu.main]]
 URL = "contact"
 name = "Contact"
