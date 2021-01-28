@@ -3,4 +3,4 @@
 	url = https://github.com/themefisher/kross-hugo.git
 [submodule "themes/toha"]
 	path = themes/toha
-	url = https://github.com/hugo-toha/toha.git
+	url = https://github.com/Javinator9889/toha.git
