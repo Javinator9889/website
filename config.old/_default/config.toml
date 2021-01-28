@@ -1,0 +1,176 @@
+baseURL = "https://javinator9889.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+summaryLength = "10"
+theme = "kross-hugo"
+title = "Javier Alonso"
+enableGitInfo = true
+enableRobotsTXT = true
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = false
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      decimals = -1
+      keepCSS2 = true
+    [minify.tdewolff.html]
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+    [minify.tdewolff.json]
+    [minify.tdewolff.svg]
+      decimals = -1
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.es]
+    languageName = "Spanish"
+    weight = 2
+
+[params]
+google_analytics_id = ""
+theme_color = "#41228e"
+[params.contact]
+enable = true
+form_action = "#"
+[params.cookies]
+enable = true
+expire_days = 2
+
+[languages.en.params]
+address = "Madrid, Comunidad de Madrid, Spain"
+author = "Javinator9889"
+copyright = "Copyright &copy; 2020 a theme by [Kross-Hugo](https://github.com/themefisher/kross-hugo)"
+description = "This is meta description"
+email = "contact@javinator9889.com"
+home = "Home"
+logo = ""
+[languages.en.params.map]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=&#038;types=(cities)&#038;libraries=places&#038;language=en"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+[languages.es.params]
+address = "Madrid, Comunidad de Madrid, España"
+author = "Javinator9889"
+copyright = "Copyright &copy; 2020 tema de [Kross-Hugo](https://github.com/themefisher/kross-hugo)"
+description = "This is meta description"
+email = "contact@javinator9889.com"
+home = "Inicio"
+logo = ""
+[languages.es.params.map]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=&#038;types=(cities)&#038;libraries=places&#038;language=es"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+[[languages.es.menu.main]]
+URL = "contact"
+name = "Contacto"
+weight = 3
+
+[[languages.es.menu.main]]
+URL = "blog"
+name = "Blog"
+url = "https://blog.javinator9889.com"
+weight = 2
+
+[[languages.es.menu.main]]
+URL = "about"
+name = "Acerca de"
+weight = 1
+
+[[languages.es.menu.main]]
+identifier = "languages"
+name = "Idiomas"
+URL = "#"
+weight = 0
+  [[languages.es.menu.main]]
+  name = "English"
+  parent = "languages"
+  URL = "/"
+
+  [[languages.es.menu.main]]
+  name = "Español"
+  parent = "languages"
+  URL = "/es"
+
+[[languages.en.menu.main]]
+identifier = "languages"
+name = "Languages"
+URL = "#"
+weight = 0
+  [[languages.en.menu.main]]
+  name = "English"
+  parent = "languages"
+  URL = "/"
+
+  [[languages.en.menu.main]]
+  name = "Español"
+  parent = "languages"
+  URL = "/es"
+
+[[languages.en.menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 3
+
+[[languages.en.menu.main]]
+URL = "blog"
+name = "Blog"
+url = "https://blog.javinator9889.com"
+weight = 2
+
+[[languages.en.menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/google-map/map.js"
+[params.preloader]
+enable = true
+preloader = "images/preloader.gif"
+[[params.social]]
+URL = "#"
+icon = "ti-facebook"
+[[params.social]]
+URL = "#"
+icon = "ti-instagram"
+[[params.social]]
+URL = "#"
+icon = "ti-dribbble"
+[[params.social]]
+URL = "#"
+icon = "ti-twitter-alt"
