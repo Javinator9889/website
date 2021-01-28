@@ -1,21 +1,34 @@
 baseURL = "https://javinator9889.com"
-languageCode = "es-es"
+languageCode = "en-us"
+defaultContentLanguage = "en"
 summaryLength = "10"
 theme = "kross-hugo"
 title = "Javier Alonso | Javinator9889"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.es]
+    languageName = "Spanish"
+    weight = 2
+
 [[menu.main]]
 URL = "contact"
 name = "Contact"
 weight = 3
+
 [[menu.main]]
 URL = "blog"
 name = "Blog"
 url = "https://blog.javinator9889.com"
 weight = 2
+
 [[menu.main]]
 URL = "about"
 name = "About"
 weight = 1
+
 [params]
 address = "125/A, CA Commercial Area, California, USA"
 author = "Johnathan Smith"
@@ -39,6 +52,7 @@ gmap_api = "https://maps.googleapis.com/maps/api/js?key=&#038;types=(cities)&#03
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
+
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
