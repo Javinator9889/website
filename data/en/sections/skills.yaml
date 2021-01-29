@@ -45,9 +45,9 @@ skills:
   summary: "Experienced with git-based development. Mostly, I use Github but I also have experience in working with GitLab."
   url: "https://git-scm.com/"
 
-- name: C/C++
-  logo: "/images/sections/skills/c++.png"
-  summary: "Know C/C++ programming mainly for embedded devices: small optimized applications for IoT and Edge."
+- name: DevOps
+  logo: "/images/sections/skills/devops.png"
+  summary: "Developing applications using DevOps culture for fast testing, releasing and deployment. Experience with Travis CI, GitLab CI/CD and Azure DevOps in conjunction with Docker and shell scripts."
 
 - name: Databases
   logo: "/images/sections/skills/databases.png"
