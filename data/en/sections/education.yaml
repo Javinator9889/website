@@ -10,59 +10,53 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Ph.D in Quantum Cryptography
+- name: Master Degree in Distributed and Embedded Systems Software
   icon: fa-microscope
+  timeframe: 2020-2021
+  institution:
+    name: Universidad Politécnica de Madrid - ETSISI
+    url: "http://msde.etsisi.upm.es/"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 3.2
+    outOf: 4
+- name: B. Sc. in Computer Engineering & Science
+  icon: fa-graduation-cap
   timeframe: 2016-2020
   institution:
-    name: ABC University of Technology
-    url: "#"
+    name: Universidad Politécnica de Madrid - ETSISI
+    url: "https://etsisi.upm.es/"
   grade: #(optional)
     scale: CGPA
-    achieved: 3.6
-    outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
-    url: "#"
-- name: B.Sc. in Computer Science & Engineering
-  icon: fa-graduation-cap
-  timeframe: 2012-2016
-  institution:
-    name: University of XYZ
-    url: "#"
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.5
+    achieved: 2.95
     outOf: 4
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: true
     courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
+    - name: End-of-degree Project
+      achieved: 10
+      outOf: 10
+    - name: Embedded systems
+      achieved: 9.4
+      outOf: 10
+    - name: Robotics
+      achieved: 8.7
+      outOf: 10
+    - name: Real Time Systems
+      achieved: 8
+      outOf: 10
   publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
+  - title: pArm - embedded system to govern an open design robotic arm (2020).
+    url: "http://oa.upm.es/65304/"
   extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
+  - Head of Volunteers during bone marrow donation campaign (2019/2020).
+  - Laboratory assistant (2019).
+  - Factoría de Talento course (2019).
+  - Quantumm Computing Madrid (2019).
+  - Volunteer at ECSA 2018.
+  - PyLadies group active participant (since 2017).
+  - Clean Code course by Autentia (2017).
 - name: Higher Secondary School Certificate
   icon: fa-university
   timeframe: 2010-2012
