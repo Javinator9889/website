@@ -35,7 +35,10 @@ degrees:
     showGrades: true
     courses:
     - name: End-of-degree Project
-      achieved: 10
+      achieved: 10 (MH)
+      outOf: 10
+    - name: Object Oriented Programming
+      achieved: 9.6 (MH)
       outOf: 10
     - name: Embedded systems
       achieved: 9.4
@@ -59,25 +62,11 @@ degrees:
   - Clean Code course by Autentia (2017).
 - name: Higher Secondary School Certificate
   icon: fa-university
-  timeframe: 2010-2012
+  timeframe: 2014-2016
   institution:
-    name: MST College of Science
-    url: "#"
+    name: Nuestra Señora de los Ángeles School
+    url: "https://www.colegiontrasradelosangeles.es/"
   grade: #(optional)
     scale: GPA
-    achieved: 5
-    outOf: 5
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-- name: Secondary School Certificate
-  icon: fa-school
-  timeframe: 2005-2010
-  institution:
-    name: JK School of Science
-  grade: #(optional)
-    scale: GPA
-    achieved: 4.5
-    outOf: 5
+    achieved: 9.95
+    outOf: 14
