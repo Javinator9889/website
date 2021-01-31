@@ -87,3 +87,11 @@ projects:
   repo: https://github.com/Javinator9889/BonsaiAIO
   summary: Control water level, temperature, time, bonsai light and automatic irrigation with an Arduino board.
   tags: ["hobby", "iot"]
+
+codersrank:
+  enable: true
+  username: Javinator9889
+
+github:
+  enable: true
+  username: Javinator9889

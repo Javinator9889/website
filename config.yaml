@@ -67,6 +67,21 @@ params:
   reCaptcha:
     enable: true
 
+  codersrank:
+    enable: true
+    summary:
+      enable: true
+      version: 0.9.11
+    activity:
+      enable: true
+      version: 0.9.14
+    skills:
+      enable: true
+      version: 0.9.19
+    portfolio:
+      enable: true
+      version: 0.9.9
+
 minify:
   disableCSS: false
   disableHTML: false

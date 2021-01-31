@@ -52,3 +52,8 @@ skills:
 - name: Databases
   logo: "/images/sections/skills/databases.png"
   summary: "Ability creating resilient databases optimized for large datasets and performance with technologies such as MariaDB and PostgreSQL. In addition, I use Redis as a database cache for serving operations faster."
+
+
+codersrank:
+  enable: true
+  username: Javinator9889
