@@ -64,6 +64,9 @@ params:
   newsletter:
     enable: false
 
+  reCaptcha:
+    enable: true
+
 minify:
   disableCSS: false
   disableHTML: false
