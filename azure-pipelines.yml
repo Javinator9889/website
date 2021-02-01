@@ -37,7 +37,7 @@ jobs:
         displayName: "[Copy] public → Artifacts directory"
         inputs:
           SourceFolder: $(Build.SourcesDirectory)/public
-          TargetFolder: $(Build.ArtifactStagingDirectory)
+          TargetFolder: $(Build.ArtifactStagingDirectory)/public
 
       - task: ArchiveFiles@2
         displayName: "[TAR] Compress HUGO build directory"
