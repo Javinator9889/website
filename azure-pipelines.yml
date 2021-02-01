@@ -18,11 +18,15 @@ jobs:
   - job: "HUGO_build"
     displayName: "[HUGO] Build static website"
     steps:
+      - checkout: self
+        submodules: recursive
+        displayName: "[Git] Get entire source with submodules"
+
       - script: |
           wget -c https://github.com/gohugoio/hugo/releases/download/v$(hugo.version)/hugo_$(hugo.version)_Linux-64bit.deb
         displayName: "[Download] Get HUGO release"
 
-      - script: 'sudo dpkg -i hugo _ $ (hugo.version) _Linux-64bit.deb'
+      - script: 'sudo dpkg -i hugo_$(hugo.version)_Linux-64bit.deb'
         displayName: "[Install] Install HUGO package"
 
       - script: 'hugo --minify --enableGitInfo'
