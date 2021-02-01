@@ -18,7 +18,7 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: "I am a passionate Computer Engineer loving increasing my knowledge and never stop learning! I built OSS tools and hardware for my own needs including from server-side applications ⚙ to end client solutions 📲 using diverse programming languages such as Python, Kotlin, NodeJS, ... I mainly work on my own projects but I'm also developing solutions for enterprises 👨‍💻"
+summary: "Soy un Ingeniero de Computadores al que le encanta seguir adquiriendo conocimiento y nunca dejar de aprender. Creo herramientas y hardware OSS para mis propias necesidades que van desde aplicaciones en servidores ⚙ a programas directamente para clientes 📲 usando múltiples lenguajes de programación como Python, Kotlin, NodeJS, ... Por lo general suelo trabajar en mis proyectos propios pero también desarrollo soluciones para empresas 👨‍💻"
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -51,23 +51,23 @@ socialLinks:
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
-- name: Leadership
+- name: Liderazgo
   percentage: 90
   color: blue
-- name: Motivation
+- name: Motivación
   percentage: 90
   color: yellow
 - name: 'English level: B2'
   percentage: 90
   color: pink
-- name: Hard Working
+- name: Gran trabajador
   percentage: 95
   color: green
-- name: Fast Learner
+- name: Aprendo rápido
   percentage: 90
   color: sky
-- name: Problem Solving
-  percentage: 95
+- name: Ingeniero
+  percentage: 100
   color: orange
 # you can also provide color code instead of pre-defined color name
 # - name: Example 1
