@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Education
+  name: Educación
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
@@ -10,7 +10,7 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Master Degree in Distributed and Embedded Systems Software
+- name: Máster en Software de Sistemas Distribuidos y Empotrados
   icon: fa-microscope
   timeframe: 2020-2021
   institution:
@@ -20,7 +20,7 @@ degrees:
     scale: CGPA
     achieved: 3.2
     outOf: 4
-- name: B. Sc. in Computer Engineering & Science
+- name: Grado en Ingeniería de Computadores
   icon: fa-graduation-cap
   timeframe: 2016-2020
   institution:
@@ -34,33 +34,33 @@ degrees:
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: true
     courses:
-    - name: End-of-degree Project
+    - name: Proyecto Fin de Grado
       achieved: 10 (MH)
       outOf: 10
-    - name: Object Oriented Programming
+    - name: Programación Orientada a Objetos
       achieved: 9.6 (MH)
       outOf: 10
-    - name: Embedded systems
+    - name: Sistemas empotrados
       achieved: 9.4
       outOf: 10
-    - name: Robotics
+    - name: Robótica
       achieved: 8.7
       outOf: 10
-    - name: Real Time Systems
+    - name: Sistemas en tiempo real
       achieved: 8
       outOf: 10
   publications: #(optional)
-  - title: pArm - embedded system to govern an open design robotic arm (2020).
+  - title: pArm – sistema informático empotrado para gobernar un brazo robótico de diseño abierto (2020).
     url: "http://oa.upm.es/65304/"
   extracurricularActivities: #(optional)
-  - Head of Volunteers during bone marrow donation campaign (2019/2020).
-  - Laboratory assistant (2019).
-  - Factoría de Talento course (2019).
+  - Coordinador de voluntarios durante la campaña de donación de médula ósea (2019/2020).
+  - Asistente de laboratorio (2019).
+  - Curso Factoría de Talento (2019).
   - Quantumm Computing Madrid (2019).
-  - Volunteer at ECSA 2018.
-  - PyLadies group active participant (since 2017).
-  - Clean Code course by Autentia (2017).
-- name: Higher Secondary School Certificate
+  - Voluntario en la ECSA 2018.
+  - Participante activo en PyLadies (since 2017).
+  - Curso sobre Clean Code, de Autentia (2017).
+- name: Bachillerato (Selectividad)
   icon: fa-university
   timeframe: 2014-2016
   institution:
