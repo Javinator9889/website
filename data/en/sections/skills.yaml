@@ -18,7 +18,7 @@ skills:
 
 - name: Kotlin (Android development)
   logo: "/images/sections/skills/kotlin.png"
-  summary: "Using Kotlin as the main application for developing Android apps. Taking advantage of Kotlin features such as coroutines, I write apps well designed in both UI/UX and performance terms."
+  summary: "Using Kotlin as the main language for developing Android apps. Taking advantage of Kotlin features such as coroutines, I write apps well designed in both UI/UX and performance terms."
   url: "https://github.com/Javinator9889?tab=repositories&q=&type=&language=kotlin"
 
 - name: Sysadmin

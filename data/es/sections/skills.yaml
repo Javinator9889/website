@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Skills
+  name: Habilidades
   id: skills
   enable: true
   weight: 2
@@ -13,45 +13,45 @@ section:
 skills:
 - name: Python
   logo: "/images/sections/skills/python.png"
-  summary: "Capable of creating ad-hoc and scalable solutions which are both testable and maintainable. Using it as one of the main languages I know for Big-Data, AI and more."
+  summary: "Capacidad de crear soluciones ad-hoc y escalables que son tanto testeables como mantenibles. Es uno de mis lenguajes principales y lo uso para BigData, IA y más."
   url: "https://github.com/Javinator9889?tab=repositories&q=&type=&language=python"
 
-- name: Kotlin (Android development)
+- name: Kotlin (desarrollo Android)
   logo: "/images/sections/skills/kotlin.png"
-  summary: "Using Kotlin as the main application for developing Android apps. Taking advantage of Kotlin features such as coroutines, I write apps well designed in both UI/UX and performance terms."
+  summary: "Uso Kotlin como el lenguaje principal para desarrollar aplicaciones Android. Aprovechando características de Kotlin como las corrutinas, escribo aplicaciones bien diseñadas tanto en términos de UI/UX como en términos de rendimiento."
   url: "https://github.com/Javinator9889?tab=repositories&q=&type=&language=kotlin"
 
 - name: Sysadmin
   logo: "/images/sections/skills/cloud.png"
-  summary: "I manage my own server which brought me sysadmin experience and skills: securing a server, handle threats, deploy applications, scalable web servers, etc. In addition, I worked with Azure as IaaS."
+  summary: "Gestiono mi propio servidor, lo que me ha brindado con experiencia y habilidades de sysadmin: proteger el servidor, manejar amenazas, desplegar aplicaciones, servidores web escalabes, etc. Además, he trabajado con Azure como IaaS."
 
 - name: Docker
   logo: "/images/sections/skills/docker.svg"
-  summary: "Write most of the server programs as dockerized container. Experienced with multi-stage, multi-arch build process."
+  summary: "Escribo la mayoría de los programas del servidor como contenedores dockerizados. Experiencia con procesos de construcción multi-etapa, multi-arquitectura."
   url: "https://www.docker.com/"
 
 - name: Hardware design
   logo: "/images/sections/skills/hardware.png"
-  summary: "Capable of designing ad-hoc hardware solutions for every kind of project. Experience working with Arduino, Microchip, VLSI, FPGAs and using KiCad as main design program."
+  summary: "Capacidad de diseñar soluciones hardware ad-hoc para todo tipo de proyecto. Experiencia trabajando con Arduino, Microchip, VLSI, FPGAs y usando KiCad como software de diseño principal."
   url: "https://github.com/Javinator9889"
 
 - name: Linux
   logo: "/images/sections/skills/linux.png"
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts, diagnose system status, setup server metrics and more. In addition, I maintain my own Linux based kernel (called ThdKernel) for my daily driver laptop."
+  summary: "Lo uso como sistema operativo principal. Capacidad de escribir scripts de bash/shell, diagnosticar el estado del sistema, métricas de servidor y más. Además, mantengo mi propio kernel basado en Linux (llamado ThdKernel) para mi portátil de uso diario."
   url: "https://github.com/Javinator9889/ThdKernel"
 
 - name: Git
   logo: "/images/sections/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, I use Github but I also have experience in working with GitLab."
+  summary: "Experiencia en desarrollos basados en git. Uso GitHub principalmente pero tengo experiencia también con GitLab."
   url: "https://git-scm.com/"
 
 - name: DevOps
   logo: "/images/sections/skills/devops.png"
-  summary: "Developing applications using DevOps culture for fast testing, releasing and deployment. Experience with Travis CI, GitLab CI/CD and Azure DevOps in conjunction with Docker and shell scripts."
+  summary: "Desarrollo aplicaciones usando la cultura DevOps para hacer tests, desarrollar y desplegar rápidamente. Experiencia trabajando con Travis CI, GitLab CI/CD y Azure DevOps junto con Docker y scripts por consola de comandos."
 
 - name: Databases
   logo: "/images/sections/skills/databases.png"
-  summary: "Ability creating resilient databases optimized for large datasets and performance with technologies such as MariaDB and PostgreSQL. In addition, I use Redis as a database cache for serving operations faster."
+  summary: "Habilidad para crear bases de datos resilientes optimizadas para grandes datasets y para gran rendimiento usando MariaDB y PostgreSQL. Además, uso Redis como una caché de bases de datos para efectuar las operaciones más rápidamente."
 
 
 codersrank:
