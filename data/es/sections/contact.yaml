@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Contact
+  name: Contacto
   id: contact
   enable: true
   weight: 8
