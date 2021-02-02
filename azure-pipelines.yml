@@ -44,13 +44,36 @@ jobs:
         inputs:
           rootFolderOrFile: $(Build.ArtifactStagingDirectory)/public
           archiveType: tar
-          tarCompression: xz
-          archiveFile: $(Build.ArtifactStagingDirectory)/site-$(Build.BuildNumber).txz
+          tarCompression: gz
+          archiveFile: $(Build.ArtifactStagingDirectory)/site-$(Build.BuildNumber).tar.gz
 
       - task: PublishBuildArtifacts@1
         displayName: "[Publish] Upload build directory"
         inputs:
-          PathtoPublish: $(Build.ArtifactStagingDirectory)/site-$(Build.BuildNumber).txz
+          PathtoPublish: $(Build.ArtifactStagingDirectory)/site-$(Build.BuildNumber).tar.gz
           ArtifactName: $(Build.BuildNumber)
           publishLocation: Container
           TargetPath: $(Build.ArtifactStagingDirectory)
+
+  - deployment: 
+    displayName: "Deploy to web server"
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    dependsOn: ["HUGO_build"]
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - task: DownloadBuildArtifacts@0
+              displayName: "[Download] Get compiled artifacts"
+              inputs:
+                buildType: current
+                artifactName: $(Build.BuildNumber)
+                downloadPath: $(Build.ArtifactStagingDirectory)
+
+            - task: ExtractFiles@1
+              displayName: "[TAR] Extract site"
+              inputs:
+                archiveFilePatterns: $(Build.ArtifactStagingDirectory)/*.tar.gz
+                destinationFolder: $(Build.ArtifactStagingDirectory)
+              
+            
