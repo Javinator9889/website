@@ -75,7 +75,7 @@ jobs:
             - task: ExtractFiles@1
               displayName: "[TAR] Extract site"
               inputs:
-                archiveFilePatterns: $(Build.ArtifactStagingDirectory)/$(Build.BuildNumber)/*.tar.gz
+                archiveFilePatterns: '**/*.tar.gz'
                 destinationFolder: $(Build.ArtifactStagingDirectory)
 
             - script: echo $VERSION > $TARGET_DIRECTORY/latest.version
@@ -88,7 +88,7 @@ jobs:
               displayName: "[SSH] Upload files to production server"
               inputs:
                 sshEndpoint: "Production server"
-                sourceFolder: $(Build.ArtifactStagingDirectory)/$(Build.BuildNumber)/public
+                sourceFolder: $(Build.ArtifactStagingDirectory)/public
                 targetFolder: ~/webserver
                 overwrite: true
 
