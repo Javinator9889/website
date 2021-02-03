@@ -63,7 +63,7 @@ jobs:
     dependsOn: ["HUGO_build"]
     strategy:
       runOnce:
-        preDeploy:
+        deploy:
           steps:
             - task: DownloadBuildArtifacts@0
               displayName: "[Download] Get compiled artifacts"
@@ -83,8 +83,6 @@ jobs:
               env:
                 VERSION: $(Build.BuildNumber)
                 TARGET_DIRECTORY: $(Build.ArtifactStagingDirectory)
-        deploy:
-          steps:
             - task: CopyFilesOverSSH@0
               displayName: "[SSH] Upload files to production server"
               inputs:
