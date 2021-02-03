@@ -61,7 +61,7 @@ jobs:
     dependsOn: ["HUGO_build"]
     strategy:
       runOnce:
-        deploy:
+        preDeploy:
           steps:
             - task: DownloadBuildArtifacts@0
               displayName: "[Download] Get compiled artifacts"
@@ -75,5 +75,25 @@ jobs:
               inputs:
                 archiveFilePatterns: $(Build.ArtifactStagingDirectory)/*.tar.gz
                 destinationFolder: $(Build.ArtifactStagingDirectory)
-              
-            
+
+            - script: echo $VERSION > $TARGET_DIRECTORY/latest.version
+              displayName: "[Shell] Create version number"
+              env:
+                VERSION: $(Build.BuildNumber)
+                TARGET_DIRECTORY: $(Build.ArtifactStagingDirectory)
+        deploy:
+          steps:
+            - task: CopyFilesOverSSH@0
+              displayName: "[SSH] Upload files to production server"
+              inputs:
+                sshEndpoint: "Production server"
+                sourceFolder: $(Build.ArtifactStagingDirectory)/public
+                targetFolder: ~/webserver
+                overwrite: true
+
+            - task: SSH@0
+              displayName: "[SSH] Sync files with remote directory"
+              inputs:
+                sshEndpoint: "Production server"
+                runOptions: commands
+                commands: "./deploy.sh"

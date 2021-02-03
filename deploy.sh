@@ -1,18 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 # Exit on error
 set -e
 
-# Check if remote username is set
-if [ -z "$USER" ]; then
-    echo "Remote host username is not set. Please, update \$USER"
-    exit 1
-fi
-
-# Check if remote host is set
-if [ -z "$HOST" ]; then
-    echo "Remote host is not set. Please, update \$HOST"
-    exit 1
+if [ -f .env ];
+then
+    source ./.env
 fi
 
 # Check if remote directory is set
@@ -22,6 +15,6 @@ then
     exit 1
 fi
 
-rsync -azvh --exclude='.DS_Store' --delete public/ ${USER}@${HOST}:~/${DIR}
+rsync -azvh --exclude='.DS_Store' --delete webserver/ ${DIR}
 
 exit 0
