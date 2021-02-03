@@ -76,7 +76,8 @@ jobs:
               displayName: "[TAR] Extract site"
               inputs:
                 archiveFilePatterns: '$(Build.ArtifactStagingDirectory)/**/*.tar.gz'
-                destinationFolder: $(Build.ArtifactStagingDirectory)
+                destinationFolder: '$(Build.ArtifactStagingDirectory)'
+                cleanDestinationFolder: false
 
             - task: CopyFilesOverSSH@0
               displayName: "[SSH] Upload files to production server"
