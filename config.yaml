@@ -67,6 +67,9 @@ params:
   reCaptcha:
     enable: true
 
+  lastmod:
+    enable: true
+
   codersrank:
     enable: true
     summary:

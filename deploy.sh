@@ -25,4 +25,7 @@ find webserver/ -type f -exec chmod 0660 {} \;
 echo "Syncing files..."
 rsync -avh --exclude='.DS_Store' --delete webserver/ ${DIR}
 
+echo "Removing webserver directory..."
+rm -rv webserver/
+
 exit 0
