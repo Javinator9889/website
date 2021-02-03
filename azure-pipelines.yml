@@ -75,19 +75,20 @@ jobs:
             - task: ExtractFiles@1
               displayName: "[TAR] Extract site"
               inputs:
-                archiveFilePatterns: $(Build.ArtifactStagingDirectory)/*.tar.gz
+                archiveFilePatterns: $(Build.ArtifactStagingDirectory)/$(Build.BuildNumber)/*.tar.gz
                 destinationFolder: $(Build.ArtifactStagingDirectory)
 
             - script: echo $VERSION > $TARGET_DIRECTORY/latest.version
               displayName: "[Shell] Create version number"
               env:
                 VERSION: $(Build.BuildNumber)
-                TARGET_DIRECTORY: $(Build.ArtifactStagingDirectory)
+                TARGET_DIRECTORY: $(Build.ArtifactStagingDirectory)/$(Build.BuildNumber)
+
             - task: CopyFilesOverSSH@0
               displayName: "[SSH] Upload files to production server"
               inputs:
                 sshEndpoint: "Production server"
-                sourceFolder: $(Build.ArtifactStagingDirectory)/public
+                sourceFolder: $(Build.ArtifactStagingDirectory)/$(Build.BuildNumber)/public
                 targetFolder: ~/webserver
                 overwrite: true
 
