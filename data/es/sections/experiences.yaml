@@ -1,0 +1,59 @@
+# section information
+section:
+  name: Experiencia
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Retamar FP.
+    url: "http://www.retamarciclosfp.com/"
+    location: Madrid
+    # company overview
+    overview: Retamar es un centro de prestigio en donde se imparten distintos ciclos de Formación Profesional.
+  positions:
+  - designation: Profesor
+    start: Enero 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Impartir la asignatura de ISO a los alumnos de ASIR1.
+    - Impartir la asignatura de PSP a los alumnos de DAM2.
+    - Dirigir a los estudiantes de segundo año sus proyectos y prácticas en empresas.
+
+- company:
+    name: Banco de España
+    url: "https://bde.es"
+    location: Madrid
+    overview: El Banco de España es el banco central nacional y, en el marco del Mecanismo Único de Supervisión (MUS), el supervisor del sistema bancario español junto al Banco Central Europeo. Su actividad está regulada por la Ley de Autonomía del Banco de España.
+  positions:
+  - designation: Becario
+    start: Febrero 2020
+    end: Agosto 2020
+    responsibilities:
+    - Desarrollo de aplicaciones móviles híbridas usando Apache Cordova.
+    - Refactorizar código antiguo y en deshuso para una mejor mantenibilidad.
+    - Estudiar y colaborar en el diseño del sitio web del ECCBSO utilizando el framework Drupal.
+    - Configurar múltiples entornos de desarrollo de aplicaciones.
+    - Colaborar en la migración de ciertas infraestructuras a servicios Docker.
+
+- company:
+    name: Freelance
+    # url: "https://www.intern.com"
+    location: Madrid
+    overview: Desarrollar mis propias aplicaciones y soluciones para clientes y empresas.
+  positions:
+  - designation: Desarrollador full-stack
+    start: Enero 2016
+    responsibilities:
+    - Adquirir más conocimiento sobre las nuevas tecnologías.
+    - Desarrollar aplicaciones tanto frontend como backend.
+    - Aprender nuevos lenguajes de programación.
+    - Trabajar con nuevos frameworks de desarrollo.
+    - Desarrollar soluciones hardware.

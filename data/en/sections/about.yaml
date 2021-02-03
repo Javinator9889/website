@@ -1,0 +1,78 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Computer Engineer teaching
+# your company information
+company:
+  name: Retamar FP 👨‍🏫.
+  url: "http://www.retamarciclosfp.com/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: "I am a passionate Computer Engineer loving increasing my knowledge and never stop learning! I built OSS tools and hardware for my own needs including from server-side applications ⚙ to end client solutions 📲 using diverse programming languages such as Python, Kotlin, NodeJS, ... I mainly work on my own projects but I'm also developing solutions for enterprises 👨‍💻"
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "contact@javinator9889.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/Javinator9889"
+
+- name: Stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "https://stackoverflow.com/users/8597016/javinator9889"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/javinator9889"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/javinator9889"
+
+- name: Telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/Javinator9889"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Leadership
+  percentage: 90
+  color: blue
+- name: Motivation
+  percentage: 90
+  color: yellow
+- name: 'English level: B2'
+  percentage: 90
+  color: pink
+- name: Hard Working
+  percentage: 95
+  color: green
+- name: Fast Learner
+  percentage: 90
+  color: sky
+- name: Engineer
+  percentage: 100
+  color: orange
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"

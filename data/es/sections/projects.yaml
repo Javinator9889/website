@@ -1,0 +1,97 @@
+# section information
+section:
+  name: Proyectos
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: Todos
+  filter: "all"
+- name: Profesionales
+  filter: "professional"
+- name: Académicos
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+- name: Handwashing reminder
+  logo: /images/sections/projects/handwashing_app_logo.png
+  role: Desarrollador
+  timeline: "Marzo 2020 - presente"
+  repo: https://github.com/Javinator9889/Handwashing-reminder # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Una aplicación que te recuerda cuándo lavarte las manos.
+  tags: ["professional", "hobby"]
+
+- name: ThdKernel
+  logo: /images/sections/projects/linux.png
+  role: Mantenedor
+  timeline: "Sept 2019 - presente"
+  repo: https://github.com/Javinator9889/ThdKernel
+  #url: ""
+  summary: Kernel personalizado para ASUS Vivobook Pro 15 (N580GD).
+  tags: ["professional", "hobby"]
+
+- name: pArm – sistema informático empotrado para gobernar un brazo robótico de diseño abierto
+  role: Líder de Equipo, ingeniero al mando y desarrollador
+  logo: /images/sections/projects/parm.png
+  timeline: "Feb 2020 - Nov 2020"
+  url: "http://oa.upm.es/65304/"
+  summary: El desarrollo del pArm, un proyecto integral de ingeniería en el que se modela, diseña y construye un brazo robótico utilizando tecnología de impresión 3D como base. El objetivo principal es ofrecer una forma asequible y sencilla para que otra persona pueda replicar el proyecto y adentrarse en el mundo de la robótica por su cuenta.
+  tags: ["academic","iot"]
+
+- name: Kernel upgrader
+  logo: /images/sections/projects/linux.png
+  role: Desarrollador
+  timeline: "Oct 2018 - Nov 2018"
+  repo: https://github.com/Javinator9889/KernelUpgrader
+  #url: ""
+  summary: Una herramienta Python para actualizar el kernel de forma segura desde kernel.org.
+  tags: ["hobby", "fun"]
+
+- name: pyGle
+  logo: /images/sections/projects/pyGle.png
+  role: Desarrollador
+  timeline: "Jun 2018 - Agosto 2018"
+  repo: https://github.com/Javinator9889/pyGle
+  summary: Una herramienta para buscar en toda la web usando Google.
+  tags: ["hobby", "professional"]
+
+- name: YouTubeMDBot
+  logo: /images/sections/projects/youtubemd.png
+  role: Desarrollador
+  timeline: "Dic 2019 - presente"
+  repo: https://github.com/Javinator9889/YouTubeMDBot
+  summary: Un potente bot para descargar casi cualquier vídeo en YouTube.
+  tags: ["hobby"]
+
+- name: pArm - S2
+  logo: /images/sections/projects/hardware.png
+  role: Desarrollador
+  timeline: "Feb 2020 - Nov 2020"
+  repo: https://github.com/pArm-TFG/pArm-S2
+  summary: pArm software embebido en el dispositivo final.
+  tags: ["academic", "iot"]
+
+- name: BonsaiAIO
+  logo: /images/sections/projects/bonsaiaio.png
+  role: Desarrollador
+  timeline: "Dic 2019 - presente"
+  repo: https://github.com/Javinator9889/BonsaiAIO
+  summary: Controla el nivel de agua, temperatura, tiempo, luminosidad del bonsai y riego automático con una placa Arduino.
+  tags: ["hobby", "iot"]
+
+codersrank:
+  enable: true
+  username: Javinator9889
+
+github:
+  enable: true
+  username: Javinator9889

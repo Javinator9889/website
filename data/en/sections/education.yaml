@@ -1,0 +1,72 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Master Degree in Distributed and Embedded Systems Software
+  icon: fa-microscope
+  timeframe: 2020-2021
+  institution:
+    name: Universidad Politécnica de Madrid - ETSISI
+    url: "http://msde.etsisi.upm.es/"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 3.2
+    outOf: 4
+- name: B. Sc. in Computer Engineering & Science
+  icon: fa-graduation-cap
+  timeframe: 2016-2020
+  institution:
+    name: Universidad Politécnica de Madrid - ETSISI
+    url: "https://etsisi.upm.es/"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 2.95
+    outOf: 4
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: true
+    courses:
+    - name: End-of-degree Project
+      achieved: 10 (MH)
+      outOf: 10
+    - name: Object Oriented Programming
+      achieved: 9.6 (MH)
+      outOf: 10
+    - name: Embedded systems
+      achieved: 9.4
+      outOf: 10
+    - name: Robotics
+      achieved: 8.7
+      outOf: 10
+    - name: Real Time Systems
+      achieved: 8
+      outOf: 10
+  publications: #(optional)
+  - title: pArm - embedded system to govern an open design robotic arm (2020).
+    url: "http://oa.upm.es/65304/"
+  extracurricularActivities: #(optional)
+  - Head of Volunteers during bone marrow donation campaign (2019/2020).
+  - Laboratory assistant (2019).
+  - Factoría de Talento course (2019).
+  - Quantumm Computing Madrid (2019).
+  - Volunteer at ECSA 2018.
+  - PyLadies group active participant (since 2017).
+  - Clean Code course by Autentia (2017).
+- name: Higher Secondary School Certificate
+  icon: fa-university
+  timeframe: 2014-2016
+  institution:
+    name: Nuestra Señora de los Ángeles School
+    url: "https://www.colegiontrasradelosangeles.es/"
+  grade: #(optional)
+    scale: GPA
+    achieved: 9.95
+    outOf: 14

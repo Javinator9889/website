@@ -1,0 +1,15 @@
+# section information
+section:
+  name: Contact
+  id: contact
+  enable: true
+  weight: 8
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+reCaptcha:
+  key: 6Lcs8UMaAAAAAB-ntb3t5WKH7pRjKm3XyqV4WwOm
+
+telegram:
+  url: "https://t.me/Javinator9889"

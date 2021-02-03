@@ -1,0 +1,111 @@
+baseURL: https://www.javinator9889.com
+languageCode: en-us
+defaultContentLanguage: en
+title: "Javinator9889"
+theme: "toha"
+
+# Manage languages
+# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+languages:
+  en:
+    languageName: English
+    weight: 1
+  es:
+    languageName: Spanish
+    weight: 2
+
+# Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
+# DefaultContentLanguage: fr
+
+# Allow raw html in markdown file
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# Enable Google Analytics
+googleAnalytics: UA-125520964-1
+
+# Enable Disqus forum
+disqusShortname: does-not-exist
+
+# Enable global emoji support
+enableEmoji: true
+
+# Site parameters
+params:
+  # Background image of the landing page
+  background: /images/site/space-iss.standard.jpg
+
+  # Provide logos for your site. The inverted logo will be used in the initial
+  # transparent navbar and the main logo will be used in the non-transparent navbar.
+  # It will default to the theme logos if not provided.
+  logo:
+    main: /images/site/J9889-logo.png
+    inverted: /images/site/J9889-logo-inv.png
+    favicon: /images/site/favicon.png
+
+  # GitHub repo URL of your site
+  gitRepo: https://github.com/Javinator9889/website
+  gitBranch: main
+
+  # specify whether you want to write some blog posts or not
+  enableBlogPost: false
+
+  # specify whether you want to show Table of Contents in reading page
+  enableTOC: true
+
+  # Provide newsletter configuration. This feature hasn't been implemented yet.
+  # Currently, you can just hide it from the footer.
+  newsletter:
+    enable: false
+
+  reCaptcha:
+    enable: true
+
+  codersrank:
+    enable: true
+    summary:
+      enable: true
+      version: 0.9.11
+    activity:
+      enable: true
+      version: 0.9.14
+    skills:
+      enable: true
+      version: 0.9.19
+    portfolio:
+      enable: true
+      version: 0.9.9
+
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    css:
+      decimals: -1
+      keepCSS2: true
+    html:
+      keepConditionalComments: true
+      keepDefaultAttrVals: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: false
+      keepWhitespace: false
+    js: {}
+    json: {}
+    svg:
+      decimals: -1
+    xml:
+      keepWhitespace: false
+
+enableRobotsTXT: true

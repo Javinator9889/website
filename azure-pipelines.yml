@@ -1,0 +1,95 @@
+#
+# Azure Pipelines for building and pushing HUGO website
+#
+trigger:
+  - main
+  - azure-pipelines
+  - dev
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  hugo.version: '0.80.0'
+
+name: 1.0.$(Rev:rr).$(Date:yyyyMMdd)
+
+
+jobs:
+  - job: "HUGO_build"
+    displayName: "[HUGO] Build static website"
+    steps:
+      - checkout: self
+        submodules: recursive
+        displayName: "[Git] Get entire source with submodules"
+
+      - script: |
+          wget -c https://github.com/gohugoio/hugo/releases/download/v$(hugo.version)/hugo_$(hugo.version)_Linux-64bit.deb
+        displayName: "[Download] Get HUGO release"
+
+      - script: 'sudo dpkg -i hugo_$(hugo.version)_Linux-64bit.deb'
+        displayName: "[Install] Install HUGO package"
+
+      - script: 'hugo --minify --enableGitInfo'
+        workingDirectory: $(Build.SourcesDirectory)
+        displayName: "[Build] Create static HTML site"
+
+      - task: CopyFiles@2
+        displayName: "[Copy] public → Artifacts directory"
+        inputs:
+          SourceFolder: $(Build.SourcesDirectory)/public
+          TargetFolder: $(Build.ArtifactStagingDirectory)/public
+
+      - task: ArchiveFiles@2
+        displayName: "[TAR] Compress HUGO build directory"
+        inputs:
+          rootFolderOrFile: $(Build.ArtifactStagingDirectory)/public
+          archiveType: tar
+          tarCompression: gz
+          archiveFile: $(Build.ArtifactStagingDirectory)/site-$(Build.BuildNumber).tar.gz
+
+      - task: PublishBuildArtifacts@1
+        displayName: "[Publish] Upload build directory"
+        inputs:
+          PathtoPublish: $(Build.ArtifactStagingDirectory)/site-$(Build.BuildNumber).tar.gz
+          ArtifactName: $(Build.BuildNumber)
+          publishLocation: Container
+          TargetPath: $(Build.ArtifactStagingDirectory)
+
+  - deployment: 
+    displayName: "Deploy to web server"
+    environment: webserver
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    dependsOn: ["HUGO_build"]
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - task: DownloadBuildArtifacts@0
+              displayName: "[Download] Get compiled artifacts"
+              inputs:
+                buildType: current
+                artifactName: $(Build.BuildNumber)
+                downloadPath: $(Build.ArtifactStagingDirectory)
+
+            - task: ExtractFiles@1
+              displayName: "[TAR] Extract site"
+              inputs:
+                archiveFilePatterns: '$(Build.ArtifactStagingDirectory)/**/*.tar.gz'
+                destinationFolder: '$(Build.ArtifactStagingDirectory)'
+                cleanDestinationFolder: false
+
+            - task: CopyFilesOverSSH@0
+              displayName: "[SSH] Upload files to production server"
+              inputs:
+                sshEndpoint: "Production server"
+                sourceFolder: $(Build.ArtifactStagingDirectory)/public
+                targetFolder: ~/webserver
+                overwrite: true
+
+            - task: SSH@0
+              displayName: "[SSH] Sync files with remote directory"
+              inputs:
+                sshEndpoint: "Production server"
+                runOptions: commands
+                commands: "./deploy.sh"
