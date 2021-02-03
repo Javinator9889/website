@@ -15,6 +15,14 @@ then
     exit 1
 fi
 
-rsync -azvh --exclude='.DS_Store' --delete webserver/ ${DIR}
+# Adjust permissions
+echo "Setting directory permissions to 0770 (rwx rwx ---)"
+find webserver/ -type d -exec chmod 0770 {} \;
+
+echo "Setting file permissions to 0660 (rw- rw- ---)"
+find webserver/ -type f -exec chmod 0660 {} \;
+
+echo "Syncing files..."
+rsync -avh --exclude='.DS_Store' --delete webserver/ ${DIR}
 
 exit 0

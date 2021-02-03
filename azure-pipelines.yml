@@ -59,7 +59,7 @@ jobs:
   - deployment: 
     displayName: "Deploy to web server"
     environment: webserver
-    # condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
     dependsOn: ["HUGO_build"]
     strategy:
       runOnce:

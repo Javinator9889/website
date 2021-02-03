@@ -107,3 +107,5 @@ minify:
       decimals: -1
     xml:
       keepWhitespace: false
+
+enableRobotsTXT: true
