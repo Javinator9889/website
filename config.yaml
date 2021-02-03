@@ -28,7 +28,7 @@ markup:
     ordered: false
 
 # Enable Google Analytics
-googleAnalytics: UA-XXXXXXXXX-X
+googleAnalytics: UA-125520964-1
 
 # Enable Disqus forum
 disqusShortname: does-not-exist
@@ -50,7 +50,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/Javinator9889/website
   gitBranch: main
 
   # specify whether you want to write some blog posts or not
