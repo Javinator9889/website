@@ -91,7 +91,7 @@ params:
 
   websiteTitle: "Javinator9889 | Official web page"
   gtm:
-    enable: true
+    enable: false
     id: "GTM-WWMWC83"
 
 minify:
