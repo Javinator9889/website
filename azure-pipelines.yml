@@ -103,7 +103,7 @@ jobs:
               - task: GitHubRelease@1
                 displayName: "[GitHub] Create new release"
                 inputs:
-                  gitHubConnection: Javinator9889
+                  gitHubConnection: github.com_Javinator9889
                   repositoryName: '$(Build.Repository.Name)'
                   action: create
                   target: '$(Build.SourceVersion)'
