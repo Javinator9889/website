@@ -119,4 +119,3 @@ minify:
 
 enableRobotsTXT: true
 disableKinds: ["taxonomy", "taxonomyTerm"]
-
