@@ -100,14 +100,14 @@ jobs:
         on:
           success:
             steps:
-              - task: GitHubRelease@1
+              - task: GitHubRelease@0
                 displayName: "[GitHub] Create new release"
                 inputs:
                   gitHubConnection: Javinator9889
                   repositoryName: '$(Build.Repository.Name)'
                   action: create
                   target: '$(Build.SourceVersion)'
-                  tagSource: userSpecifiedTag
+                  tagSource: auto
                   tag: 'v$(Build.BuildNumber)'
                   addChangeLog: true
                   title: 'v$(Build.BuildNumber)'
