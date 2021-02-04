@@ -1,0 +1,25 @@
+extras:
+- url: "https://blog.javinator9889.com"
+  name: Blog
+  freq: monthly
+  priority: 0.8
+
+- url: "https://github.com/Javinator9889"
+  name: GitHub
+  freq: weekly
+  priority: 0.7
+
+- url: "https://t.me/Javinator9889"
+  name: Telegram
+  freq: yearly
+  priority: 0.6
+
+- url: "https://linkedin.com/in/javinator9889"
+  name: LinkedIn
+  freq: monthly
+  priority: 0.5
+
+- url: "https://twitter.com/Javinator9889"
+  name: Twitter
+  freq: monthly
+  priority: 0.4
