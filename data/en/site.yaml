@@ -9,3 +9,17 @@ description: I am Javier Alonso (aka. Javinator9889), a Computer Engineer, UI/UX
 customMenus:
 - name: Blog
   url: https://blog.javinator9889.com/
+
+person:
+  brand: Javinator9889
+  birthDate: 28 Sept, 1998
+  birthPlace: Madrid, Spain
+  nickname: Javinator9889
+  gender: male
+  location: Madrid, Spain
+  jobTitle: Computer Engineer
+  knowledge: Android, embedded devices, microservices, server administration, etc.
+  languages: Spanish, English
+  name: Javier Alonso Silva
+  mail: contact@javinator9889.com
+  description: Javier Alonso (Javinator9889) is a Computer Engineer with knowledge about different topics such as embedded development, Android development, server management, microservices architecture and more.

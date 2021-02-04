@@ -9,3 +9,17 @@ description: Soy Javier Alonso (aka. Javinator9889), un Ingeniero de Computadore
 customMenus:
 - name: Blog
   url: https://blog.javinator9889.com/
+
+person:
+  brand: Javinator9889
+  birthDate: 28-09-1998
+  birthPlace: Madrid, España
+  nickname: Javinator9889
+  gender: hombre
+  location: Madrid, España
+  jobTitle: Ingeniero de Computadores
+  knowledge: Android, dispositivos empotrados, microservicios, administración de servidores, etc.
+  languages: español, inglés
+  name: Javier Alonso Silva
+  mail: contact@javinator9889.com
+  description: Javier Alonso (Javinator9889) es un Ingeniero de Computadores con diversos conocimientos de múltiples temáticas como desarrollo embebido, desarrollo Android, gestión de servidores, arquitectura de microservicios y más.

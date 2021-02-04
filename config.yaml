@@ -1,7 +1,7 @@
 baseURL: https://www.javinator9889.com
 languageCode: en-us
 defaultContentLanguage: en
-title: "Javinator9889"
+title: Javinator9889
 theme: "toha"
 
 # Manage languages
@@ -85,6 +85,12 @@ params:
       enable: true
       version: 0.9.9
 
+  email: "contact@javinator9889.com"
+  seo:
+    enable: true
+
+  websiteTitle: "Javinator9889 | Official web page"
+
 minify:
   disableCSS: false
   disableHTML: false
@@ -112,3 +118,5 @@ minify:
       keepWhitespace: false
 
 enableRobotsTXT: true
+disableKinds: ["taxonomy", "taxonomyTerm"]
+
