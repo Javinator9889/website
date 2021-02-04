@@ -12,8 +12,7 @@ pool:
 variables:
   hugo.version: '0.80.0'
 
-name: 1.0.$(Rev:rr).$(Date:yyyyMMdd)
-
+name: 1.1.$(Rev:rr).$(Date:yyyyMMdd)
 
 jobs:
   - job: "HUGO_build"
