@@ -1,20 +1,18 @@
-import os
 import subprocess
-from glob import glob, iglob
+from glob import iglob
 from pathlib import Path
-from pprint import pprint
 from typing import FrozenSet, Dict
 
 
 def find_all(types: set = { '*.png', '*jpg' }, directory: str = "public/images") -> FrozenSet[Path]:
     files = set()
     for file_type in types:
-        files.update({Path(src) for src in glob(f"{directory}/**/{file_type}", recursive=True)})
+        files.update({Path(src) for src in iglob(f"{directory}/**/{file_type}", recursive=True)})
 
     return files
 
 
-def convert_to_webp(files: FrozenSet[Path], options: FrozenSet[str] = { '-mt', '-m 6', '-z 9' }) -> FrozenSet[Path]:
+def convert_to_webp(files: FrozenSet[Path], options: FrozenSet[str] = { '-mt', '-m 6', '-z 9', '-progress' }) -> FrozenSet[Path]:
     webp_files = {}
     command = f"cwebp {' '.join(options)}"
     command = command + " {0} -o {1}"
@@ -46,9 +44,16 @@ def delete_old_files(files: FrozenSet[Path]):
         file.unlink()
 
 
+print("> Looking for all images in public/", end="\n\n")
 files = find_all()
-pprint(files)
+
+print(f"> Converting all found files ({len(files)}) to WebP...", end="\n\n")
 webp_files = convert_to_webp(files)
-pprint(webp_files)
+
+print("> Using WebP images instead of PNG or JPG...", end="\n\n")
 use_webp_files(webp_files)
+
+print("> Removing old images to save space...", end="\n\n")
 delete_old_files(files)
+
+exit(0)
