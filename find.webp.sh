@@ -1,1 +1,0 @@
-find public -type f -regex ".*\.\(jpg\|png\)" -exec cwebp -mt -m 6 -z 9 {} -o {}.webp \;

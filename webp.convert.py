@@ -4,15 +4,16 @@ from pathlib import Path
 from typing import FrozenSet, Dict
 
 
-def find_all(types: set = { '*.png', '*jpg' }, directory: str = "public/images") -> FrozenSet[Path]:
+def find_all(types: set = {'*.png', '*jpg'}, directory: str = "public/images") -> FrozenSet[Path]:
     files = set()
     for file_type in types:
-        files.update({Path(src) for src in iglob(f"{directory}/**/{file_type}", recursive=True)})
+        files.update({Path(src)
+                      for src in iglob(f"{directory}/**/{file_type}", recursive=True)})
 
     return files
 
 
-def convert_to_webp(files: FrozenSet[Path], options: FrozenSet[str] = { '-mt', '-m 6', '-z 9', '-progress' }) -> FrozenSet[Path]:
+def convert_to_webp(files: FrozenSet[Path], options: FrozenSet[str] = {'-mt', '-m 6', '-q 80', '-alpha_q 100', '-af', '-pass 10', '-v'}) -> FrozenSet[Path]:
     webp_files = {}
     command = f"cwebp {' '.join(options)}"
     command = command + " {0} -o {1}"
@@ -23,12 +24,12 @@ def convert_to_webp(files: FrozenSet[Path], options: FrozenSet[str] = { '-mt', '
             print(f"Error while moving {file} to {target}")
         else:
             webp_files[file] = target
-    
+
     return webp_files
 
 
 def use_webp_files(files_map: Dict[Path, Path], directory: str = "public"):
-    files_map = { source.name: webp.name for source, webp in files_map.items() }
+    files_map = {source.name: webp.name for source, webp in files_map.items()}
     for file in iglob(f"{directory}/**/*.html", recursive=True):
         print(f"Replacing pictures in {file}...")
         with open(file, 'r') as html_file:
@@ -56,4 +57,5 @@ use_webp_files(webp_files)
 print("> Removing old images to save space...", end="\n\n")
 delete_old_files(files)
 
+print("> Operation completed! Exiting...")
 exit(0)
