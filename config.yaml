@@ -1,4 +1,5 @@
-baseURL: https://www.javinator9889.com
+# baseURL: https://www.javinator9889.com
+baseURL: http://127.0.0.1:8081
 languageCode: en-us
 defaultContentLanguage: en
 title: Javinator9889
@@ -93,6 +94,9 @@ params:
   gtm:
     enable: false
     id: "GTM-WWMWC83"
+
+  lazyload:
+    enable: true
 
 minify:
   disableCSS: false

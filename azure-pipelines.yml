@@ -12,7 +12,7 @@ pool:
 variables:
   hugo.version: '0.80.0'
 
-name: 1.1.$(Rev:rr).$(Date:yyyyMMdd)
+name: 1.2.$(Rev:rr).$(Date:yyyyMMdd)
 
 jobs:
   - job: "HUGO_build"
@@ -29,9 +29,15 @@ jobs:
       - script: 'sudo dpkg -i hugo_$(hugo.version)_Linux-64bit.deb'
         displayName: "[Install] Install HUGO package"
 
+      - script: 'sudo apt-get update && sudo apt-get install -y webp'
+        displayName: "[Install] Install WebP package tools"
+
       - script: 'hugo --minify --enableGitInfo'
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Create static HTML site"
+
+      - script: 'python3 webp.convert.py'
+        displayName: "[Build] Compress images to WebP format"
 
       - task: CopyFiles@2
         displayName: "[Copy] public → Artifacts directory"
