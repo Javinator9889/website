@@ -13,13 +13,21 @@ def find_all(types: set = {'*.png', '*jpg'}, directory: str = "public/images") -
     return files
 
 
-def convert_to_webp(files: FrozenSet[Path], options: FrozenSet[str] = {'-mt', '-m 6', '-q 80', '-alpha_q 100', '-af', '-pass 10', '-v'}) -> FrozenSet[Path]:
+def convert_to_webp(files: FrozenSet[Path], 
+                    options: FrozenSet[str] = {'-mt', '-m 6', '-q 75', '-alpha_q 100', '-af', '-pass 10', '-v'},
+                    ignored_files: FrozenSet[str] = {'view-on-github', 'telegram-button'}) -> FrozenSet[Path]:
     webp_files = {}
+    lossless_cmd = "cwebp -mt -lossless -z 9 -af -pass 10 -v {0} -o {1}"
     command = f"cwebp {' '.join(options)}"
     command = command + " {0} -o {1}"
     for file in files:
         target = file.with_suffix('.webp')
-        proc = subprocess.run(command.format(file, target).split())
+        if any(file.name.startswith(ignored) for ignored in ignored_files):
+            cmd = lossless_cmd
+            print(f"> Ignoring file {file.name} (lossless compression)", end='\n\n')
+        else:
+            cmd = command
+        proc = subprocess.run(cmd.format(file, target).split())
         if proc.returncode != 0:
             print(f"Error while moving {file} to {target}")
         else:
