@@ -62,7 +62,6 @@ jobs:
           PathtoPublish: $(Build.ArtifactStagingDirectory)/site-$(Build.BuildNumber).tar.gz
           ArtifactName: $(Build.BuildNumber)
           publishLocation: Container
-          TargetPath: $(Build.ArtifactStagingDirectory)
 
   - deployment: 
     displayName: "Deploy to web server"
