@@ -32,7 +32,7 @@ jobs:
       - script: 'sudo apt-get update && sudo apt-get install -y webp npm'
         displayName: "[Install] Install WebP & NPM package tools"
 
-      - script: 'sudo npm install -g postcss-cli autoprefixer'
+      - script: 'sudo npm install -g postcss postcss-cli autoprefixer'
         displayName: "[Install] PostCSS and required plugins for managing CSS files"
 
       - script: 'hugo --minify --enableGitInfo'
