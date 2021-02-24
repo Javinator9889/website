@@ -29,8 +29,11 @@ jobs:
       - script: 'sudo dpkg -i hugo_$(hugo.version)_Linux-64bit.deb'
         displayName: "[Install] Install HUGO package"
 
-      - script: 'sudo apt-get update && sudo apt-get install -y webp'
+      - script: 'sudo apt-get update && sudo apt-get install -y webp npm'
         displayName: "[Install] Install WebP package tools"
+
+      - script: 'npm install -g postcss-cli autoprefixer'
+        displayName: "[Install] PostCSS and required plugins for managing CSS files"
 
       - script: 'hugo --minify --enableGitInfo'
         workingDirectory: $(Build.SourcesDirectory)
