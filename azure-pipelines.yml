@@ -38,7 +38,7 @@ jobs:
       - script: 'npm install'
         displayName: "[NPM] Install required PostCSS plugins"
 
-      - script: 'hugo --minify --enableGitInfo'
+      - script: 'hugo --minify --enableGitInfo --verbose --environment production'
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Create static HTML site"
 
