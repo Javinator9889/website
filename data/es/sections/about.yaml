@@ -15,7 +15,7 @@ company:
   url: "http://www.retamarciclosfp.com/"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+resume: "files/es/resume.pdf"
 
 # a summary about you
 summary: "Soy un Ingeniero de Computadores al que le encanta seguir adquiriendo conocimiento y nunca dejar de aprender. Creo herramientas y hardware OSS para mis propias necesidades que van desde aplicaciones en servidores ⚙ a programas directamente para clientes 📲 usando múltiples lenguajes de programación como Python, Kotlin, NodeJS, ... Por lo general suelo trabajar en mis proyectos propios pero también desarrollo soluciones para empresas 👨‍💻"

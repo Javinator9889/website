@@ -15,7 +15,7 @@ company:
   url: "http://www.retamarciclosfp.com/"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+resume: "files/en/resume.pdf"
 
 # a summary about you
 summary: "I am a passionate Computer Engineer loving increasing my knowledge and never stop learning! I built OSS tools and hardware for my own needs including from server-side applications ⚙ to end client solutions 📲 using diverse programming languages such as Python, Kotlin, NodeJS, ... I mainly work on my own projects but I'm also developing solutions for enterprises 👨‍💻"
