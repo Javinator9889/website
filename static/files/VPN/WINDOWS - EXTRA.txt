@@ -1,0 +1,7 @@
+Para aquellos usuarios de Windows, la conexión VPN usa un cifrado moderno que difiere del nativo
+del sistema operativo, por lo que sería imposible la conexión. Para poder trabajar con el conjunto
+de cifra moderno, es necesario descargar y ejecutar el archivo .reg que habilitará dichos cambios
+en el sistema, una vez reiniciado el ordenador.
+
+Esto es debido a que Windows usa un sistema de cifra ya obsoleto y fácilmente crackeable, por lo
+que es necesario usar uno más moderno para navegar con total seguridad.
