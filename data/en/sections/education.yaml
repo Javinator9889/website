@@ -18,8 +18,20 @@ degrees:
     url: "http://msde.etsisi.upm.es/"
   grade: #(optional)
     scale: CGPA
-    achieved: 3.2
+    achieved: 3.5
     outOf: 4
+  takenCourses:
+    showGrades: true
+    courses:
+    - name: Control Systems
+      achieved: 9.8
+      outOf: 10
+    - name: Services and Protocols for Internet Applications (Big Data & ML)
+      achieved: 9.5 (MH)
+      outOf: 10
+    - name: Software Systems Engineering
+      achieved: 9.3 (MH)
+      outOf: 10
 - name: B. Sc. in Computer Engineering & Science
   icon: fa-graduation-cap
   timeframe: 2016-2020

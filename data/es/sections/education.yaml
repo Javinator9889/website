@@ -18,8 +18,20 @@ degrees:
     url: "http://msde.etsisi.upm.es/"
   grade: #(optional)
     scale: CGPA
-    achieved: 3.2
+    achieved: 3.5
     outOf: 4
+  takenCourses:
+    showGrades: true
+    courses:
+    - name: Sistemas de Control
+      achieved: 9.8
+      outOf: 10
+    - name: Servicios y Protocolos de Aplicaciones en Internet (Big Data & ML)
+      achieved: 9.5 (MH)
+      outOf: 10
+    - name: Ingeniería de Software de Sistemas
+      achieved: 9.3 (MH)
+      outOf: 10
 - name: Grado en Ingeniería de Computadores
   icon: fa-graduation-cap
   timeframe: 2016-2020
