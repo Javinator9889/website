@@ -4,22 +4,17 @@ extras:
   freq: monthly
   priority: 0.8
 
-- url: "https://github.com/Javinator9889"
+- url: "https://gitlab.javinator9889.com"
   name: GitHub
-  freq: weekly
+  freq: monthly
   priority: 0.7
 
-- url: "https://t.me/Javinator9889"
-  name: Telegram
-  freq: yearly
+- url: "https://ctan.javinator9889.com"
+  name: Mirror oficial CTAN
+  freq: daily
   priority: 0.6
 
-- url: "https://linkedin.com/in/javinator9889"
-  name: LinkedIn
-  freq: monthly
+- url: "https://ubunturel.javinator9889.com"
+  name: Ubuntu CD mirror oficial
+  freq: weekly
   priority: 0.5
-
-- url: "https://twitter.com/Javinator9889"
-  name: Twitter
-  freq: monthly
-  priority: 0.4
