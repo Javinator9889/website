@@ -11,6 +11,17 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: CES Juan Pablo II
+    url: "https://www.cesjuanpablosegundo.es/"
+    location: Madrid
+    overview: The Juan Pablo II Higher Studies Centers are a work of the Educatio Servanda Foundation. We conceive of Vocational Training as the beginning of the professional journey rather than the end of the academic stage.
+  positions:
+  - designation: Teacher
+    start: March 2021
+    end: April 2021
+    responsibilities:
+    - Intensive Python course to DAM2 students.
+- company:
     name: Retamar FP.
     url: "http://www.retamarciclosfp.com/"
     location: Madrid
