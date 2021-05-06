@@ -11,6 +11,17 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: CES Juan Pablo II
+    url: "https://www.cesjuanpablosegundo.es/"
+    location: Madrid
+    overview: Los Centros de Estudios Superiores Juan Pablo II son una obra de la Fundación Educatio Servanda Concebimos la Formación Profesional, antes como el principio del trayecto profesional, que como el final de la etapa académica.
+  positions:
+  - designation: Profesor
+    start: Marzo 2021
+    end: Abril 2021
+    responsibilities:
+    - Curso intensivo de Python a alumnos de DAM2.
+- company:
     name: Retamar FP.
     url: "http://www.retamarciclosfp.com/"
     location: Madrid
