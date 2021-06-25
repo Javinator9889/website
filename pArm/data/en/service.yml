@@ -1,0 +1,40 @@
+################################# Service #################################
+service:
+  enable : true
+  title : Access to the resources
+  service_item :
+    # service item loop
+    - name : Memory
+      icon : ti-archive # themify icon pack : https://themify.me/themify-icons
+      content : Access the entire project memory and documentation, increase your knowledge and fully understand the project! It's instructive, open and self explanatory.
+      url: "https://s.javinator9889.com/pArm-memory"
+      
+    # service item loop
+    - name : 3D modeling
+      icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
+      content : Browse the different parts that make up the entire project. You can even follow the assembly instructions defined at the memory!
+      url: "https://github.com/pArm-TFG/pArm-parts"
+      
+    # service item loop
+    - name : pArm presentation
+      icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
+      content : Access to the pArm presentation itself, in which the team describes the entire process of building a robotic arm from scratch. It's like the memory, but audible!
+      url: "https://s.javinator9889.com/pArm-presentation"
+      
+    # service item loop
+    - name : Desktop application
+      icon : ti-desktop # themify icon pack : https://themify.me/themify-icons
+      content : Download the _click-to-run_ AppImage file located at the GitHub repository and discover how the arm reacts to movements!
+      url: "https://github.com/pArm-TFG/pArm-S1"
+      
+    # service item loop
+    - name : Board manufacture
+      icon : ti-harddrives # themify icon pack : https://themify.me/themify-icons
+      content : Get the PCB, manufacture your own or make any changes you need to get the arm working! Or just explore and learn 😉
+      url: "https://s.javinator9889.com/pArm-PCB"
+      
+    # service item loop
+    - name : Video demos
+      icon : ti-video-clapper # themify icon pack : https://themify.me/themify-icons
+      content : Browse an entire playlist at YouTube with some demos and tests in which the pArm lifts weight and starts moving!
+      url: "https://s.javinator9889.com/plist"
