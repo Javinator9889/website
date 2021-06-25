@@ -38,9 +38,13 @@ jobs:
       - script: 'npm install'
         displayName: "[NPM] Install required PostCSS plugins"
 
-      - script: 'hugo --minify --enableGitInfo --verbose --environment production'
+      - script: 'hugo --minify --enableGitInfo --verbose --environment production --config config.yaml'
         workingDirectory: $(Build.SourcesDirectory)
-        displayName: "[Build] Create static HTML site"
+        displayName: "[Build] Create main static HTML site"
+
+      - script: 'hugo --minify --enableGitInfo --verbose --environment production --config config.toml'
+        workingDirectory: $(Build.SourcesDirectory)
+        displayName: "[Build] Create pArm/ HTML site"
 
       - script: 'python3 webp.convert.py'
         displayName: "[Build] Compress images to WebP format"

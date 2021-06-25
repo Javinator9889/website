@@ -1,0 +1,12 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/bg-pArm.webp"
+  bg_image : "images/backgrounds/bg-pArm.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Meet the pArm"
+  content : "The end-of-degree project in which a 3D printed robotic arm is built!"
+  button:
+    enable : true
+    label : "Let's go!"
+    link : "#about"

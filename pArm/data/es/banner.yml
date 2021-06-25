@@ -1,0 +1,12 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/bg-pArm.webp"
+  bg_image : "images/backgrounds/bg-pArm.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Descubre el pArm"
+  content : "¡El proyecto fin de grado en donde se construye un brazo robótico impreso en 3D!"
+  button:
+    enable : true
+    label : "¡Vamos!"
+    link : "#about"

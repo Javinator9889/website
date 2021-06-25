@@ -1,0 +1,29 @@
+############################# feature ###################################
+feature:
+  enable : true
+  image : images/about/pArm-sideview.jpg
+  image_webp : images/about/pArm-sideview.webp
+  title : How it started -- how it's going?
+  content : "The pArm (_printed arm_) started as a students project in which we wanted to learn more about the world of robotics. Actually,
+  we wanted to build the [KUKA 2000](https://www.kuka.com/-/media/kuka-corporate/images/products/robots/kr-titan/kr-1000-titan_header.jpg?rev=223eeb68a25c4c779dd981fd6aa1b1a3&w=1900&hash=97A676E03FD1D2E355EB789ECF086A9D)
+  but as that wasn't possible we decided to create a 3D printed robotic arm based on the [uArm](https://www.ufactory.cc/pages/uarm), by UFACTORY."
+  feature_item : 
+      # feature item loop
+    - title : Motivation
+      icon : ti-star # themify icon pack : https://themify.me/themify-icons
+      content : "The main objective behind this project was to build an affordable 3D printed robotic arm."
+      
+      # feature item loop
+    - title : Educational
+      icon : ti-pencil-alt # themify icon pack : https://themify.me/themify-icons
+      content : "This way, students, engineers, professors and anyone interested in robotics can learn, discover and grow."
+
+      # feature item loop
+    - title : Tested
+      icon : ti-alert # themify icon pack : https://themify.me/themify-icons
+      content : "The final product has already been tested in terms of performance, precision and durability so you can use it safely."
+      
+      # feature item loop
+    - title : Accessible
+      icon : ti-layout-slider # themify icon pack : https://themify.me/themify-icons
+      content : Just with a computer with the God's OS (Linux, of course), you can just plug the arm and start moving with no configuration!

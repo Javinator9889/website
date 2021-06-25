@@ -1,0 +1,16 @@
+############################# About ###################################
+about:
+  enable : true
+  title : A glance
+  about_item :
+  - icon: ti-printer # themify icon pack : https://themify.me/themify-icons
+    title: 3D printed
+    content: "The pArm is a robotic arm entirely 3D printed, using multiple materials: PLA, PVA and CPE+, so that anyone can replicate and build the arm itself on its own."
+
+  - icon: ti-thought # themify icon pack : https://themify.me/themify-icons
+    title: Open to knowledge
+    content: "One of the main reasons for making this arm was to help people accessing the robotics world. This way, the entire arm (3D model, software and hardware) is open."
+
+  - icon: ti-ruler-alt-2 # themify icon pack : https://themify.me/themify-icons
+    title: Built by engineers
+    content: "The entire process is done using the engineering principles learnt during the University degree (_Computer Engineering_). Build quality, long term working and support are guaranteed."

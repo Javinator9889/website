@@ -1,0 +1,122 @@
+baseURL: https://www.javinator9889.com/pArm
+languageCode: en-us
+defaultContentLanguage: en
+title: pArm - 3D printed robotic arm
+theme: "meghna"
+
+dataDir: "pArm/data"
+contentDir: "pArm/content"
+publishDir: "public/pArm"
+assetsDir: "pArm/assets"
+staticDir: "pArm/static"
+
+paginate: 6
+summaryLength: 15
+
+
+# Manage languages
+# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+languages:
+  en:
+    languageName: English
+    weight: 1
+    languageCode: "en-us"
+    contentDir: "pArm/content/english"
+    home: "Home"
+    copyright: "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
+  es:
+    languageName: Spanish
+    weight: 2
+    languageCode: "es-es"
+    home: "Inicio"
+    contentDir: "pArm/content/french"
+    copyright: "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
+
+# Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
+# DefaultContentLanguage: fr
+
+# Allow raw html in markdown file
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# Enable Google Analytics
+googleAnalytics: UA-125520964-1
+
+# Enable Disqus forum
+disqusShortname: does-not-exist
+
+# Enable global emoji support
+enableEmoji: true
+
+# Site parameters
+params:
+  plugins:
+    css:
+      - plugins/bootstrap/bootstrap.min.css
+      - plugins/themify-icons/themify-icons.css
+      - plugins/magnific-popup/magnific-popup.css
+      - plugins/slick/slick.css
+      - https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap
+    js:
+      - plugins/jquery/jquery.min.js
+      - plugins/bootstrap/bootstrap.min.js
+      - plugins/slick/slick.min.js
+      - plugins/shuffle/shuffle.min.js
+      - plugins/magnific-popup/jquery.magnific-popup.min.js
+      - plugins/lazy-load/lozad.min.js
+      - plugins/google-map/map.js
+  # Background image of the landing page
+  background: /images/site/space-iss.standard.jpg
+
+  # Provide logos for your site. The inverted logo will be used in the initial
+  # transparent navbar and the main logo will be used in the non-transparent navbar.
+  # It will default to the theme logos if not provided.
+  logo:
+    main: /images/site/J9889-logo.png
+    inverted: /images/site/J9889-logo-inv.png
+    favicon: /images/site/favicon.png
+
+  # GitHub repo URL of your site
+  gitRepo: https://github.com/Javinator9889/website
+  gitBranch: main
+
+  email: "contact@javinator9889.com"
+  seo:
+    enable: true
+
+  websiteTitle: "pArm - 3D printed robotic arm"
+
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    css:
+      decimals: -1
+      keepCSS2: true
+    html:
+      keepConditionalComments: true
+      keepDefaultAttrVals: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: false
+      keepWhitespace: false
+    js: {}
+    json: {}
+    svg:
+      decimals: -1
+    xml:
+      keepWhitespace: false
+
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "taxonomyTerm"]

@@ -1,0 +1,29 @@
+############################# feature ###################################
+feature:
+  enable : true
+  image : images/about/pArm-sideview.jpg
+  image_webp : images/about/pArm-sideview.webp
+  title : ¿Cómo empezó -- cómo va ahora?
+  content : "El pArm (_printed arm_) empezó como un proyecto de unos estudiantes en donde quisimos aprender mucho más sobre el mundo de la robótica. En realidad,
+  quisimos construir el [KUKA 2000](https://www.kuka.com/-/media/kuka-corporate/images/products/robots/kr-titan/kr-1000-titan_header.jpg?rev=223eeb68a25c4c779dd981fd6aa1b1a3&w=1900&hash=97A676E03FD1D2E355EB789ECF086A9D)
+  pero eso no era del todo posible, por lo que decidimos crear un brazo robótico completamente impreso en 3D basándonos en el [uArm](https://www.ufactory.cc/pages/uarm), de UFACTORY."
+  feature_item : 
+      # feature item loop
+    - title : Motivación
+      icon : ti-star # themify icon pack : https://themify.me/themify-icons
+      content : "El objetivo principal detrás de este proyecto era el de construir un brazo robótico impreso en 3D asequible."
+      
+      # feature item loop
+    - title : Educacional
+      icon : ti-pencil-alt # themify icon pack : https://themify.me/themify-icons
+      content : "De esta forma, los estudiantes, ingenieros, profesores y cualquiera interesado en robótica podría aprender, descubrir y crecer."
+
+      # feature item loop
+    - title : Probado
+      icon : ti-alert # themify icon pack : https://themify.me/themify-icons
+      content : "El producto final se ha probado en términos de rendimiento, precisión y durabilidad por lo que se puede usar de forma segura."
+      
+      # feature item loop
+    - title : Accesible
+      icon : ti-layout-slider # themify icon pack : https://themify.me/themify-icons
+      content : Simplemente con un ordenador con el OS de Dios (Linux, por supuesto), ¡puedes conectar el brazo y empezar a moverlo sin necesidad de configurar nada!

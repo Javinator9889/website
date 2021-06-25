@@ -1,0 +1,40 @@
+############################### team ############################
+team:
+  enable : true
+  title : The team
+  team_member :
+    # team member loop
+    - name : Javier Alonso
+      image_webp : images/team/javinator9889.webp
+      image : images/team/javinator9889.png
+      designation : Team leader
+      content: Among other responsibilities, in charge of the design and main development of the software of the arm. In addition, management of the project, the 3D printing, mathematical analysis and social media.
+      social:
+        - icon : ti-twitter-alt # themify icon pack : https://themify.me/themify-icons
+          link : "https://twitter.com/javinator9889"
+        - icon : ti-linkedin # themify icon pack : https://themify.me/themify-icons
+          link : "https://www.linkedin.com/in/javinator9889"
+        - icon : ti-world # themify icon pack : https://themify.me/themify-icons
+          link : "https://www.javinator9889.com"
+        
+    # team member loop
+    - name : Mihai Octavian
+      image_webp : images/team/mihai.webp
+      image : images/team/mihai.jpeg
+      designation : 3D modeler & assembly
+      content : In charge of the 3D modeling of the entire robotic arm alongside the assembly of the arm itself. In addition, worked on the development of the desktop app.
+      social :
+        - icon : ti-linkedin # themify icon pack : https://themify.me/themify-icons
+          link : "https://www.linkedin.com/in/mihai-octavian-34865419b/"
+        
+    # team member loop
+    - name : José Alejandro Moya
+      image_webp : images/team/alex.webp
+      image : images/team/alex.jpeg
+      designation : Hardware designer & developer
+      content : "In charge of the entire design of the hardware that manages the arm. In addition, developer of the main desktop application and mathematical analysis of the arm."
+      social :
+        - icon : ti-twitter-alt # themify icon pack : https://themify.me/themify-icons
+          link : "https://twitter.com/MetaleX121"
+        - icon : ti-linkedin # themify icon pack : https://themify.me/themify-icons
+          link : "https://www.linkedin.com/in/jose-alejandro-moya-blanco-78952a126/"

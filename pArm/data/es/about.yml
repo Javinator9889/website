@@ -1,0 +1,16 @@
+############################# About ###################################
+about:
+  enable : true
+  title : Un vistazo
+  about_item :
+  - icon: ti-printer # themify icon pack : https://themify.me/themify-icons
+    title: Impreso en 3D
+    content: "El pArm es un brazo robótico completamente impreso en plástico con una impresora 3D, usando múltiples materiales: PLA, PVA and CPE+, de forma que cualquiera puede replicar y construirlo por sí mismo."
+
+  - icon: ti-thought # themify icon pack : https://themify.me/themify-icons
+    title: Abierto al conocimiento
+    content: "Una de las principales razones para crear este brazo era ayudar a la gente a adentrarse en el mundo de la robótica. De esta manera, el brazo al completo (modelos 3D, _software_ y _hardware_) es abierto."
+
+  - icon: ti-ruler-alt-2 # themify icon pack : https://themify.me/themify-icons
+    title: Hecho por ingenieros
+    content: "El proceso al completo se hace aplicando los principios de la ingeniería que se han aprendido durante la carrera (_Ingeniería de Computadores_). La calidad de la construcción, el funcionamiento a largo plazo y soporte están garantizados."
