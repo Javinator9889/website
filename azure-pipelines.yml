@@ -32,7 +32,7 @@ jobs:
       - script: 'sudo apt-get update && sudo apt-get install -y webp npm'
         displayName: "[Install] Install WebP & NPM package tools"
 
-      - script: 'sudo npm install -g postcss-cli'
+      - script: 'sudo npm install -g postcss-cli critical'
         displayName: "[NPM] Install PostCSS for managing CSS files"
 
       - script: 'npm install'
@@ -45,6 +45,14 @@ jobs:
       - script: 'hugo --minify --enableGitInfo --verbose --environment production --config config.toml'
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Create pArm/ HTML site"
+
+      - script: 'cat index.html | critical --base . --inline > index.html'
+        workingDirectory: $(Build.SourcesDirectory)
+        displayName: "[Build] Inline CSS for avoiding render-blocking resources"
+
+      - script: 'cat index.html | critical --base . --inline > index.html'
+        workingDirectory: "$(Build.SourcesDirectory)/pArm"
+        displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
       - script: 'python3 webp.convert.py'
         displayName: "[Build] Compress images to WebP format"

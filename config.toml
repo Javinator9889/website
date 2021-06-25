@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "https://www.javinator9889.com/pArm"
-title = "Meghna"
+title = "pArm - 3D printed robotic arm"
 theme = "meghna"
 themesDir = "themes"
 
@@ -92,21 +92,21 @@ weight = 4
 [params]
 logo = "images/pArm-ico.png"
 # Meta data
-description = "Responsive Multipurpose Parallax Hugo Template"
-author = "Themefisher"
+description = "pArm informational landing page"
+author = "Javinator9889"
 # Google Analytics
-google_analytics_id = "" # Your ID
+google_analytics_id = "UA-125520964-1" # Your ID
 # post share
 post_share = false
 
 # preloader
 [params.preloader]
 enable = false
-preloader = "images/logo.png"
+preloader = "images/pArm-ico.png"
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
 
 # google map
