@@ -32,8 +32,11 @@ jobs:
       - script: 'sudo apt-get update && sudo apt-get install -y webp npm'
         displayName: "[Install] Install WebP & NPM package tools"
 
-      - script: 'sudo npm install -g postcss-cli critical'
+      - script: 'sudo npm install -g postcss-cli'
         displayName: "[NPM] Install PostCSS for managing CSS files"
+      
+      - script: 'sudo npm install -g critical --unsafe-perm=true'
+        displayName: "[NPM] Install critical for handling CSS files"
 
       - script: 'npm install'
         displayName: "[NPM] Install required PostCSS plugins"

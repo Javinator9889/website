@@ -5,7 +5,7 @@ team:
   team_member :
     # team member loop
     - name : Javier Alonso
-      image_webp : images/team/javinator9889.webp
+      # image_webp : images/team/javinator9889.webp
       image : images/team/javinator9889.png
       designation : Team leader
       content: Among other responsibilities, in charge of the design and main development of the software of the arm. In addition, management of the project, the 3D printing, mathematical analysis and social media.
@@ -19,7 +19,7 @@ team:
         
     # team member loop
     - name : Mihai Octavian
-      image_webp : images/team/mihai.webp
+      # image_webp : images/team/mihai.webp
       image : images/team/mihai.jpeg
       designation : 3D modeler & assembly
       content : In charge of the 3D modeling of the entire robotic arm alongside the assembly of the arm itself. In addition, worked on the development of the desktop app.
@@ -29,7 +29,7 @@ team:
         
     # team member loop
     - name : José Alejandro Moya
-      image_webp : images/team/alex.webp
+      # image_webp : images/team/alex.webp
       image : images/team/alex.jpeg
       designation : Hardware designer & developer
       content : "In charge of the entire design of the hardware that manages the arm. In addition, developer of the main desktop application and mathematical analysis of the arm."
