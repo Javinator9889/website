@@ -1,0 +1,40 @@
+################################# Service #################################
+service:
+  enable : true
+  title : Acceso a los recursos
+  service_item :
+    # service item loop
+    - name : Memoria
+      icon : ti-archive # themify icon pack : https://themify.me/themify-icons
+      content : ¡Accede a la documentación al completo, aprende cosas nuevas y entiende al completo el proyecto! Hemos intentado que sea instructiva, abierta y que se explique por sí misma.
+      url: "https://s.javinator9889.com/pArm-memory"
+      
+    # service item loop
+    - name : Modelado 3D
+      icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
+      content : Navega por las diferentes piezas que conforman el brazo y haz las modificaciones que quieras con FreeCAD. ¡Puedes inclusive seguir las instrucciones de montaje descritas en la memoria!
+      url: "https://github.com/pArm-TFG/pArm-parts"
+      
+    # service item loop
+    - name : Presentación del pArm
+      icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
+      content : Accede a la presentación del brazo en sí, en donde el equipo describe al completo el proceso de construir un brazo robótico desde cero. Es como la memoria, ¡pero puedes escucharlo!
+      url: "https://s.javinator9889.com/pArm-presentation"
+      
+    # service item loop
+    - name : Aplicación de escritorio
+      icon : ti-desktop # themify icon pack : https://themify.me/themify-icons
+      content : Descarga el AppImage _click-to-run_ que se encuentra en GitHub ¡y descubre cómo responde el brazo a los movimientos!
+      url: "https://github.com/pArm-TFG/pArm-S1"
+      
+    # service item loop
+    - name : Obtén la placa
+      icon : ti-harddrives # themify icon pack : https://themify.me/themify-icons
+      content : ¡Pide una PCB o haz cualquier campo que necesites para que funcione el brazo! O simplemente explora y aprende 😉
+      url: "https://s.javinator9889.com/pArm-PCB"
+      
+    # service item loop
+    - name : Demostraciones
+      icon : ti-video-clapper # themify icon pack : https://themify.me/themify-icons
+      content : Navega por una _playlist_ de YouTube con múltiples demos y tests en donde el pArm levanta peso y empieza a moverse.
+      url: "https://s.javinator9889.com/plist"

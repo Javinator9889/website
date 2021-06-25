@@ -1,0 +1,35 @@
+############################## Contact #############################
+contact:
+  enable : true
+  title : Contáctanos
+  subtitle : Detalles de contacto
+  content : "Ponte en contacto con nosotros (o con la Universidad) ¡y así podremos resolverte cualquier duda que puedas tener! Aquí tienes la información
+  de contacto de la Universidad (ETSISI UPM) y de cada miembro del equipo."
+
+  # Contact details
+  contact_list:
+    - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
+      info : "Campus Sur de la UPM, Calle de Alan Turing, s/n, 28031 Madrid"
+      
+    - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
+      info : "Teléfono: +34910673524"
+      
+    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+      info : "Javier Alonso: contact@javinator9889.com"
+
+    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+      info : "Mihai Octavian: mihai.stanescu@alumnos.upm.es"
+
+    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+      info : "Alejandro Moya: alejandro.moya.blanco@alumnos.upm.es"
+
+
+  # Contact form
+  contact_form:
+    enable : true
+    form_action : "https://formspree.io/f/xjvjovqn" #contact form works with https://formspree.io
+    name : "Tu nombre"
+    email : "Tu email"
+    subject : "Asunto"
+    message : "Mensaje"
+    submit : "Enviar"
