@@ -3,27 +3,31 @@ contact:
   enable : true
   title : Contact Us
   subtitle : Contact Details
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.
+  content : "Get in touch with us (or with the University) so we can answer any question you may have! Here you have
+  contact information for the University (ETSISI UPM) and each one of the team."
 
   # Contact details
   contact_list:
     - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
-      info : "Khaja Road, Bayzid, Chittagong, Bangladesh"
+      info : "Campus Sur de la UPM, Calle de Alan Turing, s/n, 28031 Madrid"
       
     - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
-      info : "Phone: +880-31-000-000"
-      
-    - icon : ti-printer # themify icon pack : https://themify.me/themify-icons
-      info : "Fax: +880-31-000-000"
+      info : "Phone: +34910673524"
       
     - icon : ti-email # themify icon pack : https://themify.me/themify-icons
-      info : "Email: hello@meghna.com"
+      info : "Javier Alonso: contact@javinator9889.com"
+
+    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+      info : "Mihai Octavian: mihai.stanescu@alumnos.upm.es"
+
+    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+      info : "Alejandro Moya: alejandro.moya.blanco@alumnos.upm.es"
 
 
   # Contact form
   contact_form:
     enable : true
-    form_action : "#" #contact form works with https://formspree.io
+    form_action : "https://formspree.io/f/xjvjovqn" #contact form works with https://formspree.io
     name : "Your Name"
     email : "Your Email"
     subject : "Subject"

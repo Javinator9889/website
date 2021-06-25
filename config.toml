@@ -52,39 +52,19 @@ url = "#about"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "services"
+name = "resources"
 url = "#services"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "portfolio"
-url = "#portfolio"
-weight = 3
-
-[[Languages.en.menu.main]]
 name = "team"
 url = "#team"
-weight = 4
-
-[[Languages.en.menu.main]]
-name = "pricing"
-url = "#pricing"
-weight = 5
-
-[[Languages.en.menu.main]]
-name = "blog"
-url = "#blog"
-weight = 6
+weight = 3
 
 [[Languages.en.menu.main]]
 name = "contact"
 url = "#contact"
-weight = 7
-
-[[Languages.en.menu.main]]
-name = "themefisher"
-url = "https://themefisher.com/"
-weight = 8
+weight = 4
 
 
 ################### French Navigation ########################
@@ -94,50 +74,30 @@ url = "#about"
 weight = 1
 
 [[Languages.es.menu.main]]
-name = "servicios"
+name = "recursos"
 url = "#services"
 weight = 2
 
 [[Languages.es.menu.main]]
-name = "portfolio"
-url = "#portfolio"
+name = "equipo"
+url = "#team"
 weight = 3
 
 [[Languages.es.menu.main]]
-name = "equipo"
-url = "#team"
-weight = 4
-
-[[Languages.es.menu.main]]
-name = "precios"
-url = "#pricing"
-weight = 5
-
-[[Languages.es.menu.main]]
-name = "blog"
-url = "#blog"
-weight = 6
-
-[[Languages.es.menu.main]]
-name = "contact"
+name = "contacto"
 url = "#contact"
-weight = 7
-
-[[Languages.es.menu.main]]
-name = "themefisher"
-url = "https://themefisher.com/"
-weight = 8
+weight = 4
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/logo.png"
+logo = "images/pArm-ico.png"
 # Meta data
 description = "Responsive Multipurpose Parallax Hugo Template"
 author = "Themefisher"
 # Google Analytics
 google_analytics_id = "" # Your ID
 # post share
-post_share = true
+post_share = false
 
 # preloader
 [params.preloader]
@@ -146,7 +106,7 @@ preloader = "images/logo.png"
 
 # cookies
 [params.cookies]
-enable = false
+enable = true
 expire_days = 2
 
 # google map
@@ -154,29 +114,29 @@ expire_days = 2
 enable = false
 
 ############################# social icons ##########################
-[[params.social]]
-icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+# [[params.social]]
+# icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
+# link = "#"
 
-[[params.social]]
-icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+# [[params.social]]
+# icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+# link = "#"
 
-[[params.social]]
-icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+# [[params.social]]
+# icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
+# link = "#"
 
-[[params.social]]
-icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+# [[params.social]]
+# icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
+# link = "#"
 
-[[params.social]]
-icon = "ti-dribbble" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+# [[params.social]]
+# icon = "ti-dribbble" # themify icon pack : https://themify.me/themify-icons
+# link = "#"
 
-[[params.social]]
-icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+# [[params.social]]
+# icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
+# link = "#"
 
 
 ################################ English Language ########################
@@ -186,7 +146,7 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 home = "Home"
-copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
+copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Javinator9889](https://www.javinator9889.com/)"
 
 ################################ France Language ########################
 [Languages.es]
@@ -195,4 +155,4 @@ languageCode = "es-es"
 contentDir = "content/spanish"
 weight = 2
 home = "Inicio"
-copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
+copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Javinator9889](https://www.javinator9889.com/)"
