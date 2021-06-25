@@ -50,11 +50,11 @@ jobs:
         displayName: "[Build] Create pArm/ HTML site"
 
       - script: 'cat index.html | critical --base . --inline > index.html'
-        workingDirectory: $(Build.SourcesDirectory)
+        workingDirectory: $(Build.SourcesDirectory)/public
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
       - script: 'cat index.html | critical --base . --inline > index.html'
-        workingDirectory: "$(Build.SourcesDirectory)/pArm"
+        workingDirectory: "$(Build.SourcesDirectory)/public/pArm"
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
       - script: 'python3 webp.convert.py'
