@@ -34,9 +34,6 @@ jobs:
 
       - script: 'sudo npm install -g postcss-cli'
         displayName: "[NPM] Install PostCSS for managing CSS files"
-      
-      - script: 'sudo npm install -g critical --unsafe-perm=true'
-        displayName: "[NPM] Install critical for handling CSS files"
 
       - script: 'npm install'
         displayName: "[NPM] Install required PostCSS plugins"
@@ -48,14 +45,6 @@ jobs:
       - script: 'hugo --minify --enableGitInfo --verbose --environment production --config config.toml'
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Create pArm/ HTML site"
-
-      - script: 'critical public/index.html --base public/ --inline > public/index.html'
-        workingDirectory: $(Build.SourcesDirectory)
-        displayName: "[Build] Inline CSS for avoiding render-blocking resources"
-
-      - script: 'critical public/pArm/index.html --base public/pArm --inline > public/pArm/index.html'
-        workingDirectory: $(Build.SourcesDirectory)
-        displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
       - script: 'python3 webp.convert.py'
         displayName: "[Build] Compress images to WebP format"
