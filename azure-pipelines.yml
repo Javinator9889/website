@@ -49,11 +49,11 @@ jobs:
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Create pArm/ HTML site"
 
-      - script: 'cat public/index.html | critical --base public/ --inline > public/index.html'
+      - script: 'critical public/index.html --base public/ --inline > public/index.html'
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
-      - script: 'cat public/pArm/index.html | critical --base public/pArm --inline > public/pArm/index.html'
+      - script: 'critical public/pArm/index.html --base public/pArm --inline > public/pArm/index.html'
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
