@@ -10,7 +10,7 @@ pool:
   vmImage: "ubuntu-latest"
 
 variables:
-  hugo.version: '0.80.0'
+  hugo.version: '0.84.1'
 
 name: 1.4.$(Rev:rr).$(Date:yyyyMMdd)
 
@@ -49,12 +49,12 @@ jobs:
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Create pArm/ HTML site"
 
-      - script: 'cat index.html | critical --base . --inline > index.html'
-        workingDirectory: $(Build.SourcesDirectory)/public
+      - script: 'cat public/index.html | critical --base public/ --inline > public/index.html'
+        workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
-      - script: 'cat index.html | critical --base . --inline > index.html'
-        workingDirectory: "$(Build.SourcesDirectory)/public/pArm"
+      - script: 'cat public/pArm/index.html | critical --base public/pArm --inline > public/pArm/index.html'
+        workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
       - script: 'python3 webp.convert.py'
