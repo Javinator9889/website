@@ -53,17 +53,18 @@ def delete_old_files(files: FrozenSet[Path]):
         file.unlink()
 
 
-print("> Looking for all images in public/", end="\n\n")
-files = find_all()
+for dir in {"public/images", "public/pArm/images"}:
+    print(f"> Looking for all images in {dir}", end="\n\n")
+    files = find_all(directory=dir)
 
-print(f"> Converting all found files ({len(files)}) to WebP...", end="\n\n")
-webp_files = convert_to_webp(files)
+    print(f"> Converting all found files ({len(files)}) to WebP...", end="\n\n")
+    webp_files = convert_to_webp(files)
 
-print("> Using WebP images instead of PNG or JPG...", end="\n\n")
-use_webp_files(webp_files)
+    print("> Using WebP images instead of PNG or JPG...", end="\n\n")
+    use_webp_files(webp_files)
 
-print("> Removing old images to save space...", end="\n\n")
-delete_old_files(files)
+    print("> Removing old images to save space...", end="\n\n")
+    delete_old_files(files)
 
 print("> Operation completed! Exiting...")
 exit(0)

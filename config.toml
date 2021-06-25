@@ -101,7 +101,7 @@ post_share = false
 
 # preloader
 [params.preloader]
-enable = false
+enable = true
 preloader = "images/pArm-ico.png"
 
 # cookies

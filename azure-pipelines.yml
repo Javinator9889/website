@@ -10,7 +10,7 @@ pool:
   vmImage: "ubuntu-latest"
 
 variables:
-  hugo.version: '0.80.0'
+  hugo.version: '0.84.1'
 
 name: 1.4.$(Rev:rr).$(Date:yyyyMMdd)
 
@@ -32,8 +32,11 @@ jobs:
       - script: 'sudo apt-get update && sudo apt-get install -y webp npm'
         displayName: "[Install] Install WebP & NPM package tools"
 
-      - script: 'sudo npm install -g postcss-cli critical'
+      - script: 'sudo npm install -g postcss-cli'
         displayName: "[NPM] Install PostCSS for managing CSS files"
+      
+      - script: 'sudo npm install -g critical --unsafe-perm=true'
+        displayName: "[NPM] Install critical for handling CSS files"
 
       - script: 'npm install'
         displayName: "[NPM] Install required PostCSS plugins"
@@ -46,12 +49,12 @@ jobs:
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Create pArm/ HTML site"
 
-      - script: 'cat index.html | critical --base . --inline > index.html'
+      - script: 'critical public/index.html --base public/ --inline > public/index.html'
         workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
-      - script: 'cat index.html | critical --base . --inline > index.html'
-        workingDirectory: "$(Build.SourcesDirectory)/pArm"
+      - script: 'critical public/pArm/index.html --base public/pArm --inline > public/pArm/index.html'
+        workingDirectory: $(Build.SourcesDirectory)
         displayName: "[Build] Inline CSS for avoiding render-blocking resources"
 
       - script: 'python3 webp.convert.py'

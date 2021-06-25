@@ -2,7 +2,7 @@
 feature:
   enable : true
   image : images/about/pArm-sideview.jpg
-  image_webp : images/about/pArm-sideview.webp
+  # image_webp : images/about/pArm-sideview.webp
   title : How it started -- how it's going?
   content : "The pArm (_printed arm_) started as a students project in which we wanted to learn more about the world of robotics. Actually,
   we wanted to build the [KUKA 2000](https://www.kuka.com/-/media/kuka-corporate/images/products/robots/kr-titan/kr-1000-titan_header.jpg?rev=223eeb68a25c4c779dd981fd6aa1b1a3&w=1900&hash=97A676E03FD1D2E355EB789ECF086A9D)
