@@ -9,6 +9,8 @@ description: Soy Javier Alonso (aka. Javinator9889), un Ingeniero de Computadore
 customMenus:
 - name: Blog
   url: https://blog.javinator9889.com/
+- name: pArm
+  url: /pArm/es
 
 person:
   brand: Javinator9889
