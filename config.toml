@@ -17,6 +17,8 @@ summaryLength = "15"
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = []
+enableRobotsTXT = true
+
 
 ############################# Plugins ##########################
 # css plugins
@@ -156,3 +158,30 @@ contentDir = "content/spanish"
 weight = 2
 home = "Inicio"
 copyright = "Copyright &copy; 2020 Diseñado por [Themefisher](https://themefisher.com) & desarrollado por [Javinator9889](https://www.javinator9889.com/)"
+
+[minify]
+disableCSS = false
+disableHTML = false
+disableJS = false
+disableJSON = false
+disableSVG = false
+disableXML = false
+minifyOutput = true
+
+[minify.tdewolff.css]
+decimals = -1
+keepCSS2 = true
+
+[minify.tdewolff.html]
+keepConditionalComments = true
+keepDefaultAttrVals = true
+keepDocumentTags = true
+keepEndTags = true
+keepQuotes = false
+keepWhitespace = false
+
+[minify.tdewolff.svg]
+decimals = -1
+
+[minify.tdewolff.xml]
+keepWhitespace = false

@@ -1,4 +1,9 @@
 extras:
+- url: "https://www.javinator9889.com/pArm"
+  name: "pArm - 3D printed arm"
+  freq: yearly
+  priority: 0.9
+  
 - url: "https://blog.javinator9889.com"
   name: Blog
   freq: monthly
