@@ -148,7 +148,7 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 home = "Home"
-copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Javinator9889](https://www.javinator9889.com/)"
+copyright = "Copyright &copy; 2021 Designed by [Themefisher](https://themefisher.com) & Developed by [Javinator9889](https://www.javinator9889.com/)"
 
 ################################ France Language ########################
 [Languages.es]
@@ -157,7 +157,7 @@ languageCode = "es-es"
 contentDir = "content/spanish"
 weight = 2
 home = "Inicio"
-copyright = "Copyright &copy; 2020 Diseñado por [Themefisher](https://themefisher.com) & desarrollado por [Javinator9889](https://www.javinator9889.com/)"
+copyright = "Copyright &copy; 2021 Diseñado por [Themefisher](https://themefisher.com) & desarrollado por [Javinator9889](https://www.javinator9889.com/)"
 
 [minify]
 disableCSS = false
