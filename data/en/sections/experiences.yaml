@@ -11,6 +11,19 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Teldat
+    url: "https://teldat.com"
+    location: Tres Cantos, Madrid
+    overview: Teldat is a 100 % Spanish company situated at the technological forefront of telecommunications.
+  positions:
+  - designation: R&D Embedded Engineer
+    start: September 2021
+    # end: 
+    responsibilities:
+    - Development of a Linux based operating system for routers.
+    - Real-time and hardware programming of communication devices.
+    - Other multidisciplinary tasks in cooperation with the team based in Germany.
+- company:
     name: CES Juan Pablo II
     url: "https://www.cesjuanpablosegundo.es/"
     location: Madrid
@@ -31,7 +44,7 @@ experiences:
   - designation: Teacher
     start: January 2021
     # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
+    end: June 2021
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Impart ISO subject to ASIR1 students.

@@ -11,6 +11,19 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Teldat
+    url: "https://teldat.com"
+    location: Tres Cantos, Madrid
+    overview: Teldat es una compañía 100% española situada a la vanguardia tecnológica de las telecomunicaciones.
+  positions:
+  - designation: Ingeniero Embebido I+D
+    start: Septiembre 2021
+    # end: 
+    responsibilities:
+    - Desarrollo de un sistema operativo basado en Linux para *routers*.
+    - Programación en tiempo real y *hardware* de dispositivos de comunicación.
+    - Otras tareas de desarrollo multidisciplinar en conjunto con la sede en Alemania.
+- company:
     name: CES Juan Pablo II
     url: "https://www.cesjuanpablosegundo.es/"
     location: Madrid
@@ -31,7 +44,7 @@ experiences:
   - designation: Profesor
     start: Enero 2021
     # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
+    end: Junio 2021
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Impartir la asignatura de ISO a los alumnos de ASIR1.
