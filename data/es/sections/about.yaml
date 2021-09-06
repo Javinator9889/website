@@ -8,11 +8,11 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Ingeniero de Computadores impartiendo clases
+designation: Ingeniero Embebido I+D
 # your company information
 company:
-  name: Retamar FP 👨‍🏫.
-  url: "http://www.retamarciclosfp.com/"
+  name: Teldat 🐦.
+  url: "https://www.teldat.com/es/teldat-home-es/"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/es/resume.pdf"
